@@ -1,0 +1,150 @@
+/* yasin */
+
+*{
+  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  background-color: white;
+}
+
+nav{
+  display: flex;
+  height: 100px;
+  background-color: black;
+  justify-content: center;
+}
+video{
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #3b3b3b;
+}
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: #7c7c7c;
+}
+
+.logo img{
+  width: 150px;
+  height: 100px;
+}
+
+
+/* Text moeten onder elkaar */
+.title-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.fielt-container{
+  width: 90%;
+  margin: 5% auto;
+}
+
+/* De layout van de container deed het iets beter met flex-box */
+.grafs-container{
+  margin-top:5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* grid-template-columns: 1fr; */
+  /* grid-template-areas:
+  "one"
+  "two"
+  "three"; */
+
+}
+
+/* de grafieken */
+.graf{
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  box-shadow: 0 4px 8px 0 rgba(50, 50,
+50, 0.2), 0 6px 20px 0 rgba(50, 50, 50, 0.19);
+}
+.grafTitle-container{
+  margin-top: 5%;
+}
+
+
+
+.graf .one{
+  grid-area: one;
+}
+.graf .two{
+  grid-area: two;
+}
+.graf .three{
+  grid-area: three;
+}
+
+.graf-container{
+  margin-top: 3%;
+  width: 80%;
+  height: 300px;
+}
+
+#fuel{
+  width: 100%;
+}
+
+/* small tablet */
+@media only screen and (min-width: 768px) {
+
+  .one ,.two{
+    width: 400px;
+    height: 400px;
+  }
+
+}
+
+/* tablet */
+@media only screen and (min-width: 1024px) {
+  .grafs-container{
+    width: 80%;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+  }
+  .one ,.two{
+    width: 400px;
+    height: 400px;
+  }
+
+  .three{
+    align-self: center;
+    width: 900px;
+    height: 900px;
+  }
+}
+
+/*laptop*/
+@media only screen and (min-width: 1423px) {
+  .grafs-container{
+    width: 80%;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+  .graf{
+    width: 400px;
+    height: 400px;
+  }
+
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css">
+    <title>ITS</title>
+  </head>
+  <body>
+    <!-- navigatie bar + logo -->
+    <nav>
+      <div class="logo">
+        <img src="img/spaceX.svg" alt="">
+      </div>
+    </nav>
+    <div class="wrapper">
+      <video id="ship"autoplay loop muted>
+        <!-- Meer kans dat de video het doet op verschillende webbrowsers -->
+        <source src="video/Ship.mp4" type="video/mp4" />
+        <source src="video/Ship.webm" type="video/webm" />
+      </video>
+      <script>
+       // extra zekerheid
+        document.getElementById('ship').play();
+      </script>
+    </div>
+    <div class="fielt-container">
+      <div class="title-container">
+        <h1>INTERPLANETARY TRANSPORT</h1>
+        <p>WHERE WE START OUR JOURNEY</p>
+      </div>
+      <div class="grafs-container">
+        <div class="graf one">
+          <div class="grafTitle-container">
+            <h1>FUEL</h1>
+          </div>
+
+          <div class="graf-container">
+            <canvas id="fuel" class="canv" width="250" height="250"></canvas>
+          </div>
+
+        </div>
+        <div class="graf two">
+          <div class="grafTitle-container">
+            <h1>SUPPLY</h1>
+          </div>
+
+          <div class="graf-container">
+            <canvas id="supply" class="canv" width="250" height="250"></canvas>
+          </div>
+
+        </div>
+        <div class="graf three">
+          <div class="grafTitle-container">
+            <h1>SCHEME</h1>
+          </div>
+
+          <div class="graf-container">
+            <canvas id="scheme" class="canv" width="250" height="250"></canvas>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0" type="text/javascript"></script>
+  <script src="js/script.js" charset="utf-8" type="text/javascript"></script>
+
+
+</html>
